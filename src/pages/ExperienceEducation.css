@@ -1,0 +1,802 @@
+/* =========================
+   Page
+========================= */
+
+.experience-education-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    color: #0b2e4f;
+
+    padding-bottom: 100px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.experience-header {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 100px 20px 70px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #0066b3;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.experience-header h1 {
+    font-size: 52px;
+
+    margin: 0 0 25px;
+
+    color: #0b2e4f;
+}
+
+.experience-intro {
+    color: #5b6b7a;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Timeline
+========================= */
+
+.timeline {
+    position: relative;
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 30px 0;
+}
+
+
+/* =========================
+   Vertical Line
+========================= */
+
+.timeline::before {
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background: #c9ddec;
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   Timeline Item
+========================= */
+
+.timeline-item {
+    position: relative;
+
+    width: 50%;
+
+    padding: 30px 50px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Left
+========================= */
+
+.timeline-left {
+    left: 0;
+
+    text-align: right;
+}
+
+
+/* =========================
+   Right
+========================= */
+
+.timeline-right {
+    left: 50%;
+
+    text-align: left;
+}
+
+
+/* =========================
+   Timeline Dot
+========================= */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 45px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 2px solid #0066b3;
+
+    color: #0066b3;
+
+    z-index: 2;
+
+    font-size: 18px;
+
+    box-shadow: 0 2px 8px rgba(0, 102, 179, 0.12);
+}
+
+
+/* =========================
+   Left Dot
+========================= */
+
+.timeline-left .timeline-dot {
+    right: -22px;
+}
+
+
+/* =========================
+   Right Dot
+========================= */
+
+.timeline-right .timeline-dot {
+    left: -22px;
+}
+
+
+/* =========================
+   Card
+========================= */
+
+.timeline-card {
+    padding: 35px;
+
+    background: #f3f9fd;
+
+    border: 1px solid #d9eaf5;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 59, 111, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-6px);
+
+    background: #eaf5fb;
+
+    border-color: #0066b3;
+
+    box-shadow:
+        0 10px 25px rgba(0, 102, 179, 0.12);
+}
+
+/* =========================
+   Logo
+========================= */
+
+.timeline-logo {
+    width: 80px;
+
+    height: 80px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eef6fc;
+
+    border-radius: 16px;
+
+    color: #0066b3;
+
+    font-size: 32px;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* =========================
+   Logo Rotation
+========================= */
+
+.timeline-card:hover .timeline-logo {
+    transform: rotateY(360deg);
+}
+
+
+/* =========================
+   Logo Image
+========================= */
+
+.timeline-logo img {
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Type
+========================= */
+
+.timeline-type {
+    color: #0066b3;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   Title
+========================= */
+
+.timeline-card h2 {
+    font-size: 24px;
+
+    margin: 12px 0 8px;
+
+    color: #0b2e4f;
+}
+
+
+/* =========================
+   Organization
+========================= */
+
+.timeline-card h3 {
+    font-size: 18px;
+
+    font-weight: 500;
+
+    margin: 0 0 15px;
+
+    color: #36566f;
+}
+
+
+/* =========================
+   Period
+========================= */
+
+.timeline-period {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #718596;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.timeline-card p {
+    color: #5b6b7a;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Technologies
+========================= */
+
+.timeline-technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.timeline-technologies span {
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #1683c4;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    border: 1px solid #1683c4;
+
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+.timeline-technologies span:hover {
+    background: #0066b3;
+
+    border-color: #0066b3;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .experience-header {
+        padding: 70px 20px 50px;
+    }
+
+    .experience-header h1 {
+        font-size: 40px;
+    }
+
+
+    /* Move line to left */
+
+    .timeline::before {
+        left: 20px;
+    }
+
+
+    .timeline-item {
+        width: 100%;
+
+        left: 0;
+
+        padding: 30px 0 30px 60px;
+
+        text-align: left;
+    }
+
+
+    .timeline-left,
+    .timeline-right {
+        left: 0;
+
+        text-align: left;
+    }
+
+
+    .timeline-dot {
+        left: -2px !important;
+
+        right: auto !important;
+    }
+
+
+    .timeline-card {
+        padding: 25px;
+    }
+
+}
+
+
+
+/* =========================
+   Timeline
+========================= */
+
+.timeline {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+
+/* =========================
+   Timeline Line
+========================= */
+
+.timeline::before {
+    content: '';
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: linear-gradient(to bottom,
+            #d9eaf5,
+            #7db9dc,
+            #d9eaf5);
+
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   Timeline Item
+========================= */
+
+.timeline-item {
+    position: relative;
+
+    width: 50%;
+
+    padding: 30px 50px;
+
+    margin-bottom: 25px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Left / Right
+========================= */
+
+.timeline-left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-right {
+    left: 50%;
+    text-align: left;
+}
+
+
+/* =========================
+   Timeline Icon
+========================= */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 48px;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 3px solid #1976b9;
+
+    color: #1976b9;
+
+    font-size: 17px;
+
+    z-index: 5;
+
+    /* Makes it feel embedded into timeline */
+    box-shadow:
+        0 0 0 5px #ffffff,
+        0 4px 12px rgba(25, 118, 185, 0.20);
+
+    /* IMPORTANT: no pointer/click feeling */
+    pointer-events: none;
+}
+
+
+/* Left Icon */
+
+.timeline-left .timeline-dot {
+    right: -22px;
+}
+
+
+/* Right Icon */
+
+.timeline-right .timeline-dot {
+    left: -22px;
+}
+
+
+/* =========================
+   Card
+========================= */
+
+.timeline-card {
+    position: relative;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(145deg,
+            #f8fcff 0%,
+            #f1f8fd 55%,
+            #eaf5fb 100%);
+
+    border: 1px solid #d4e8f5;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 12px rgba(19, 94, 145, 0.05),
+        0 12px 30px rgba(19, 94, 145, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================
+   Premium Card Hover
+========================= */
+
+.timeline-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #8fc5e5;
+
+    background:
+        linear-gradient(145deg,
+            #ffffff 0%,
+            #f4faff 50%,
+            #e8f5fc 100%);
+
+    box-shadow:
+        0 8px 20px rgba(19, 94, 145, 0.08),
+        0 18px 45px rgba(19, 94, 145, 0.13),
+        0 0 25px rgba(77, 166, 219, 0.08);
+}
+
+
+/* =========================
+   Card Header
+========================= */
+
+.timeline-card-header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Company Logo
+========================= */
+
+.timeline-logo {
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #dcecf6;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 12px rgba(19, 94, 145, 0.08);
+
+    overflow: hidden;
+}
+
+
+/* Logo Image */
+
+.timeline-logo img {
+    width: 62px;
+    height: 62px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* =========================
+   Type
+========================= */
+
+.timeline-type {
+    display: inline-block;
+
+    color: #1976b9;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.6px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   Title
+========================= */
+
+.timeline-card h2 {
+    font-size: 24px;
+
+    line-height: 1.35;
+
+    margin: 8px 0;
+
+    color: #0b2e4f;
+}
+
+
+/* =========================
+   Organization
+========================= */
+
+.timeline-card h3 {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin: 0 0 15px;
+
+    color: #315b76;
+}
+
+
+/* =========================
+   Period
+========================= */
+
+.timeline-period {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #6c8495;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.timeline-period svg {
+    color: #1976b9;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.timeline-card p {
+    color: #587080;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Technology Tags
+========================= */
+
+.timeline-technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+/* Slightly stronger blue */
+
+.timeline-technologies span {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #dceef9;
+
+    border: 1px solid #c4e1f2;
+
+    color: #175d8d;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+
+.timeline-technologies span:hover {
+    background: #c9e5f5;
+
+    border-color: #9bcce8;
+
+    color: #0d4f7c;
+}

@@ -1,0 +1,539 @@
+/* =========================
+   Research Page
+========================= */
+
+.research-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    color: #0b2e4f;
+
+    padding-bottom: 100px;
+}
+
+
+/* =========================
+   Research Header
+========================= */
+
+.research-header {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 100px 20px 60px;
+
+    text-align: center;
+}
+
+.research-header-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #e1f0fa;
+
+    color: #0066b3;
+
+    font-size: 32px;
+}
+
+.research-header h1 {
+    font-size: 52px;
+
+    margin: 0 0 25px;
+
+    color: #0b2e4f;
+}
+
+.research-intro {
+    color: #5b6b7a;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Featured Research
+========================= */
+
+.featured-research {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 50px;
+
+    background: #f3f9fd;
+
+    border: 1px solid #d9eaf5;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 59, 111, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.featured-research:hover {
+    background: #eaf5fb;
+
+    border-color: #0066b3;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 102, 179, 0.12);
+}
+
+
+/* =========================
+   Research Icon
+========================= */
+
+.research-icon {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #e1f0fa;
+
+    color: #0066b3;
+
+    border-radius: 20px;
+
+    font-size: 48px;
+}
+
+
+/* =========================
+   Research Content
+========================= */
+
+.research-content {
+    flex: 1;
+}
+
+.content-label {
+    color: #0066b3;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+.research-content h2 {
+    font-size: 32px;
+
+    margin: 12px 0 15px;
+
+    color: #0b2e4f;
+}
+
+.research-content p {
+    color: #5b6b7a;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 750px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Research Button
+========================= */
+
+.research-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    background: #0066b3;
+
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 12px rgba(0, 102, 179, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+.research-button:hover {
+    background: #00518f;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 16px rgba(0, 102, 179, 0.24);
+}
+
+
+/* =========================
+   Webinars
+========================= */
+
+.webinars-section {
+    width: 95%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.webinars-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.webinars-header {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.webinars-header h2 {
+    font-size: 40px;
+
+    margin: 10px 0 15px;
+
+    color: #0b2e4f;
+}
+
+.webinars-header p {
+    color: #5b6b7a;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Webinar Card
+========================= */
+
+.webinar-card {
+    background: #f3f9fd;
+
+    border: 1px solid #d9eaf5;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 59, 111, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.webinar-card:hover {
+    transform: translateY(-8px);
+
+    background: #eaf5fb;
+
+    border-color: #0066b3;
+
+    box-shadow:
+        0 10px 25px rgba(0, 102, 179, 0.12);
+}
+
+
+/* =========================
+   Webinar Video
+========================= */
+
+.webinar-video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #dcecf7;
+
+    overflow: hidden;
+}
+
+.webinar-video iframe {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    display: block;
+}
+
+
+/* =========================
+   Webinar Content
+========================= */
+
+.webinar-content {
+    padding: 30px;
+}
+
+.webinar-content h3 {
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    margin: 12px 0 15px;
+
+    color: #0b2e4f;
+}
+
+.webinar-content p {
+    color: #5b6b7a;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Watch Button
+========================= */
+
+.watch-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #0066b3;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.watch-button:hover {
+    color: #00518f;
+}
+
+
+/* =========================
+   Workshops
+========================= */
+
+.workshops-section {
+    width: 95%;
+
+    max-width: 1400px;
+
+    margin: 0 auto 100px;
+}
+
+.workshops-header {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.workshops-header h2 {
+    font-size: 40px;
+
+    margin: 10px 0 15px;
+
+    color: #0b2e4f;
+}
+
+.workshops-header p {
+    color: #5b6b7a;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Workshop Grid
+========================= */
+
+.workshops-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   Workshop Card
+========================= */
+
+.workshop-card {
+    background: #f3f9fd;
+
+    border: 1px solid #d9eaf5;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 59, 111, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+.workshop-card:hover {
+    transform: translateY(-8px);
+
+    background: #eaf5fb;
+
+    border-color: #0066b3;
+
+    box-shadow:
+        0 10px 25px rgba(0, 102, 179, 0.12);
+}
+
+
+/* =========================
+   Workshop Video
+========================= */
+
+.workshop-video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #dcecf7;
+}
+
+.workshop-video iframe {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    display: block;
+}
+
+
+/* =========================
+   Workshop Content
+========================= */
+
+.workshop-content {
+    padding: 30px;
+}
+
+.workshop-content h3 {
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    margin: 12px 0 15px;
+
+    color: #0b2e4f;
+}
+
+.workshop-content p {
+    color: #5b6b7a;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .research-header {
+        padding: 70px 20px 40px;
+    }
+
+    .research-header h1 {
+        font-size: 40px;
+    }
+
+    .featured-research {
+        width: 90%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 30px;
+    }
+
+    .webinars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .webinar-thumbnail {
+        height: 180px;
+    }
+
+    .workshops-section {
+        width: 90%;
+    }
+
+    .workshops-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

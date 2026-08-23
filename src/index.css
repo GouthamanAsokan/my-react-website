@@ -47,8 +47,10 @@
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
+
     --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px,
+      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -56,21 +58,43 @@
   }
 }
 
+/* =========================
+   Body
+========================= */
+
 body {
   margin: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
 }
 
+/* =========================
+   Root - Full Width
+========================= */
+
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+
   text-align: center;
+
   border-inline: 1px solid var(--border);
-  min-height: 100svh;
+
+  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
+
   box-sizing: border-box;
 }
+
+/* =========================
+   Headings
+========================= */
 
 h1,
 h2 {
@@ -101,9 +125,17 @@ h2 {
   }
 }
 
+/* =========================
+   Paragraphs
+========================= */
+
 p {
   margin: 0;
 }
+
+/* =========================
+   Code
+========================= */
 
 code,
 .counter {

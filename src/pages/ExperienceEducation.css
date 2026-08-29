@@ -1,655 +1,56 @@
-/* =========================
-   Page
-========================= */
+/* =========================================================
+   EXPERIENCE & EDUCATION PAGE
+   ========================================================= */
 
 .experience-education-page {
     width: 100%;
     min-height: 100vh;
-
     background: #ffffff;
-
     color: #0b2e4f;
-
     padding-bottom: 100px;
 }
 
 
-/* =========================
-   Header
-========================= */
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .experience-header {
+    width: 100%;
     max-width: 850px;
-
     margin: 0 auto;
-
     padding: 100px 20px 70px;
-
+    box-sizing: border-box;
     text-align: center;
 }
 
 .section-label {
     color: #0066b3;
-
     font-size: 15px;
-
     font-weight: 600;
-
     text-transform: uppercase;
-
     letter-spacing: 2px;
-
     margin-bottom: 15px;
 }
 
 .experience-header h1 {
     font-size: 52px;
-
+    line-height: 1.2;
     margin: 0 0 25px;
-
     color: #0b2e4f;
 }
 
 .experience-intro {
     color: #5b6b7a;
-
     font-size: 18px;
-
     line-height: 1.8;
+    margin: 0;
 }
 
 
-/* =========================
-   Timeline
-========================= */
-
-.timeline {
-    position: relative;
-
-    width: 90%;
-
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    padding: 30px 0;
-}
-
-
-/* =========================
-   Vertical Line
-========================= */
-
-.timeline::before {
-    content: '';
-
-    position: absolute;
-
-    left: 50%;
-
-    top: 0;
-
-    bottom: 0;
-
-    width: 2px;
-
-    background: #c9ddec;
-
-    transform: translateX(-50%);
-}
-
-
-/* =========================
-   Timeline Item
-========================= */
-
-.timeline-item {
-    position: relative;
-
-    width: 50%;
-
-    padding: 30px 50px;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   Left
-========================= */
-
-.timeline-left {
-    left: 0;
-
-    text-align: right;
-}
-
-
-/* =========================
-   Right
-========================= */
-
-.timeline-right {
-    left: 50%;
-
-    text-align: left;
-}
-
-
-/* =========================
-   Timeline Dot
-========================= */
-
-.timeline-dot {
-    position: absolute;
-
-    top: 45px;
-
-    width: 45px;
-
-    height: 45px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: #ffffff;
-
-    border: 2px solid #0066b3;
-
-    color: #0066b3;
-
-    z-index: 2;
-
-    font-size: 18px;
-
-    box-shadow: 0 2px 8px rgba(0, 102, 179, 0.12);
-}
-
-
-/* =========================
-   Left Dot
-========================= */
-
-.timeline-left .timeline-dot {
-    right: -22px;
-}
-
-
-/* =========================
-   Right Dot
-========================= */
-
-.timeline-right .timeline-dot {
-    left: -22px;
-}
-
-
-/* =========================
-   Card
-========================= */
-
-.timeline-card {
-    padding: 35px;
-
-    background: #f3f9fd;
-
-    border: 1px solid #d9eaf5;
-
-    border-radius: 16px;
-
-    box-shadow:
-        0 4px 15px rgba(0, 59, 111, 0.06);
-
-    transition: all 0.3s ease;
-}
-
-.timeline-card:hover {
-    transform: translateY(-6px);
-
-    background: #eaf5fb;
-
-    border-color: #0066b3;
-
-    box-shadow:
-        0 10px 25px rgba(0, 102, 179, 0.12);
-}
-
-/* =========================
-   Logo
-========================= */
-
-.timeline-logo {
-    width: 80px;
-
-    height: 80px;
-
-    margin-bottom: 20px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #eef6fc;
-
-    border-radius: 16px;
-
-    color: #0066b3;
-
-    font-size: 32px;
-
-    transition: transform 0.6s ease;
-}
-
-
-/* =========================
-   Logo Rotation
-========================= */
-
-.timeline-card:hover .timeline-logo {
-    transform: rotateY(360deg);
-}
-
-
-/* =========================
-   Logo Image
-========================= */
-
-.timeline-logo img {
-    width: 65px;
-
-    height: 65px;
-
-    object-fit: contain;
-
-    border-radius: 10px;
-}
-
-
-/* =========================
-   Type
-========================= */
-
-.timeline-type {
-    color: #0066b3;
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-}
-
-
-/* =========================
-   Title
-========================= */
-
-.timeline-card h2 {
-    font-size: 24px;
-
-    margin: 12px 0 8px;
-
-    color: #0b2e4f;
-}
-
-
-/* =========================
-   Organization
-========================= */
-
-.timeline-card h3 {
-    font-size: 18px;
-
-    font-weight: 500;
-
-    margin: 0 0 15px;
-
-    color: #36566f;
-}
-
-
-/* =========================
-   Period
-========================= */
-
-.timeline-period {
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color: #718596;
-
-    font-size: 14px;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   Description
-========================= */
-
-.timeline-card p {
-    color: #5b6b7a;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   Technologies
-========================= */
-
-.timeline-technologies {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 8px;
-}
-
-.timeline-technologies span {
-    padding: 7px 13px;
-
-    border-radius: 20px;
-
-    background: #1683c4;
-
-    color: #ffffff;
-
-    font-size: 12px;
-
-    font-weight: 500;
-
-    border: 1px solid #1683c4;
-
-    transition:
-        background 0.3s ease,
-        transform 0.2s ease;
-}
-
-.timeline-technologies span:hover {
-    background: #0066b3;
-
-    border-color: #0066b3;
-
-    transform: translateY(-2px);
-}
-
-
-/* =========================
-   Mobile Optimization
-   ========================= */
-
-@media (max-width: 768px) {
-
-    .experience-education-page {
-        padding-bottom: 50px;
-        overflow-x: hidden;
-    }
-
-    /* Header */
-    .experience-header {
-        width: 100%;
-        max-width: none;
-        box-sizing: border-box;
-        padding: 55px 20px 40px;
-    }
-
-    .section-label {
-        font-size: 12px;
-        letter-spacing: 1.5px;
-        margin-bottom: 12px;
-    }
-
-    .experience-header h1 {
-        font-size: 34px;
-        line-height: 1.2;
-        margin-bottom: 18px;
-    }
-
-    .experience-intro {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-
-    /* Timeline */
-    .timeline {
-        width: 100%;
-        max-width: none;
-        box-sizing: border-box;
-        padding: 10px 15px 20px 15px;
-    }
-
-    /* Move timeline to left */
-    .timeline::before {
-        left: 24px;
-        width: 2px;
-    }
-
-
-    /* Timeline Items */
-    .timeline-item,
-    .timeline-left,
-    .timeline-right {
-        width: 100%;
-        left: 0;
-        right: auto;
-        box-sizing: border-box;
-        padding: 20px 0 20px 58px;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-
-
-    /* Timeline Icon */
-    .timeline-dot,
-    .timeline-left .timeline-dot,
-    .timeline-right .timeline-dot {
-        left: 2px !important;
-        right: auto !important;
-        top: 38px;
-        width: 40px;
-        height: 40px;
-        font-size: 15px;
-        border-width: 2px;
-        box-shadow:
-            0 0 0 4px #ffffff,
-            0 3px 10px rgba(25, 118, 185, 0.18);
-    }
-
-
-    /* Card */
-    .timeline-card {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 22px;
-        border-radius: 15px;
-    }
-
-    .timeline-card:hover {
-        transform: translateY(-3px);
-    }
-
-
-    /* Card Header */
-    .timeline-card-header {
-        align-items: flex-start;
-        margin-bottom: 16px;
-    }
-
-
-    /* Logo */
-    .timeline-logo {
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
-        border-radius: 13px;
-        margin-bottom: 0;
-    }
-
-    .timeline-logo img {
-        width: 48px;
-        height: 48px;
-    }
-
-
-    /* Type */
-    .timeline-type {
-        font-size: 11px;
-        letter-spacing: 1.2px;
-    }
-
-
-    /* Title */
-    .timeline-card h2 {
-        font-size: 20px;
-        line-height: 1.3;
-        margin: 7px 0;
-    }
-
-
-    /* Organization */
-    .timeline-card h3 {
-        font-size: 16px;
-        line-height: 1.4;
-        margin-bottom: 12px;
-    }
-
-
-    /* Period */
-    .timeline-period {
-        font-size: 13px;
-        gap: 6px;
-        margin-bottom: 16px;
-        flex-wrap: wrap;
-    }
-
-
-    /* Description */
-    .timeline-card p {
-        font-size: 14px;
-        line-height: 1.7;
-        margin-bottom: 16px;
-    }
-
-
-    /* Technology Tags */
-    .timeline-technologies {
-        gap: 6px;
-    }
-
-    .timeline-technologies span {
-        padding: 6px 10px;
-        font-size: 11px;
-        line-height: 1.3;
-    }
-}
-
-
-/* =========================
-   Small Phones
-   ========================= */
-
-@media (max-width: 480px) {
-
-    .experience-header {
-        padding: 45px 16px 35px;
-    }
-
-    .experience-header h1 {
-        font-size: 30px;
-    }
-
-    .experience-intro {
-        font-size: 14px;
-    }
-
-
-    .timeline {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .timeline::before {
-        left: 19px;
-    }
-
-
-    .timeline-item,
-    .timeline-left,
-    .timeline-right {
-        padding-left: 48px;
-        padding-right: 0;
-    }
-
-
-    .timeline-dot,
-    .timeline-left .timeline-dot,
-    .timeline-right .timeline-dot {
-        left: -1px !important;
-        top: 34px;
-        width: 38px;
-        height: 38px;
-    }
-
-
-    .timeline-card {
-        padding: 18px;
-        border-radius: 14px;
-    }
-
-
-    .timeline-logo {
-        width: 54px;
-        height: 54px;
-        min-width: 54px;
-    }
-
-    .timeline-logo img {
-        width: 43px;
-        height: 43px;
-    }
-
-
-    .timeline-card h2 {
-        font-size: 18px;
-    }
-
-    .timeline-card h3 {
-        font-size: 15px;
-    }
-
-    .timeline-card p {
-        font-size: 13.5px;
-    }
-
-
-    .timeline-technologies span {
-        padding: 5px 9px;
-        font-size: 10.5px;
-    }
-}
-
-/* =========================
-   Timeline
-========================= */
+/* =========================================================
+   TIMELINE
+   ========================================================= */
 
 .timeline {
     position: relative;
@@ -657,22 +58,20 @@
     max-width: 1100px;
     margin: 0 auto;
     padding: 30px 0;
+    box-sizing: border-box;
 }
 
 
-/* =========================
-   Timeline Line
-========================= */
+/* =========================================================
+   TIMELINE VERTICAL LINE
+   ========================================================= */
 
 .timeline::before {
     content: '';
-
     position: absolute;
-
     left: 50%;
     top: 0;
     bottom: 0;
-
     width: 2px;
 
     background: linear-gradient(to bottom,
@@ -684,26 +83,22 @@
 }
 
 
-/* =========================
-   Timeline Item
-========================= */
+/* =========================================================
+   TIMELINE ITEM
+   ========================================================= */
 
 .timeline-item {
     position: relative;
-
     width: 50%;
-
     padding: 30px 50px;
-
     margin-bottom: 25px;
-
     box-sizing: border-box;
 }
 
 
-/* =========================
-   Left / Right
-========================= */
+/* =========================================================
+   LEFT / RIGHT ITEMS
+   ========================================================= */
 
 .timeline-left {
     left: 0;
@@ -716,9 +111,9 @@
 }
 
 
-/* =========================
-   Timeline Icon
-========================= */
+/* =========================================================
+   TIMELINE DOT
+   ========================================================= */
 
 .timeline-dot {
     position: absolute;
@@ -744,41 +139,41 @@
 
     z-index: 5;
 
-    /* Makes it feel embedded into timeline */
     box-shadow:
         0 0 0 5px #ffffff,
         0 4px 12px rgba(25, 118, 185, 0.20);
 
-    /* IMPORTANT: no pointer/click feeling */
     pointer-events: none;
 }
 
 
-/* Left Icon */
+/* Left Dot */
 
 .timeline-left .timeline-dot {
     right: -22px;
 }
 
 
-/* Right Icon */
+/* Right Dot */
 
 .timeline-right .timeline-dot {
     left: -22px;
 }
 
 
-/* =========================
-   Card
-========================= */
+/* =========================================================
+   TIMELINE CARD
+   ========================================================= */
 
 .timeline-card {
     position: relative;
 
+    width: 100%;
+    box-sizing: border-box;
+
     padding: 35px;
 
-    background:
-        linear-gradient(145deg,
+    background: linear-gradient(145deg,
             #f8fcff 0%,
             #f1f8fd 55%,
             #eaf5fb 100%);
@@ -798,17 +193,16 @@
 }
 
 
-/* =========================
-   Premium Card Hover
-========================= */
+/* =========================================================
+   CARD HOVER
+   ========================================================= */
 
 .timeline-card:hover {
     transform: translateY(-6px);
 
     border-color: #8fc5e5;
 
-    background:
-        linear-gradient(145deg,
+    background: linear-gradient(145deg,
             #ffffff 0%,
             #f4faff 50%,
             #e8f5fc 100%);
@@ -820,23 +214,25 @@
 }
 
 
-/* =========================
-   Card Header
-========================= */
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
 
 .timeline-card-header {
     display: flex;
     align-items: center;
-
+    gap: 18px;
     margin-bottom: 20px;
 }
 
 
-/* =========================
-   Company Logo
-========================= */
+/* =========================================================
+   COMPANY LOGO
+   ========================================================= */
 
 .timeline-logo {
+    flex: 0 0 76px;
+
     width: 76px;
     height: 76px;
 
@@ -854,6 +250,8 @@
         0 4px 12px rgba(19, 94, 145, 0.08);
 
     overflow: hidden;
+
+    transition: transform 0.6s ease;
 }
 
 
@@ -869,9 +267,16 @@
 }
 
 
-/* =========================
-   Type
-========================= */
+/* Logo Rotation */
+
+.timeline-card:hover .timeline-logo {
+    transform: rotateY(360deg);
+}
+
+
+/* =========================================================
+   TYPE
+   ========================================================= */
 
 .timeline-type {
     display: inline-block;
@@ -890,9 +295,9 @@
 }
 
 
-/* =========================
-   Title
-========================= */
+/* =========================================================
+   TITLE
+   ========================================================= */
 
 .timeline-card h2 {
     font-size: 24px;
@@ -905,12 +310,14 @@
 }
 
 
-/* =========================
-   Organization
-========================= */
+/* =========================================================
+   ORGANIZATION
+   ========================================================= */
 
 .timeline-card h3 {
     font-size: 18px;
+
+    line-height: 1.4;
 
     font-weight: 600;
 
@@ -920,9 +327,9 @@
 }
 
 
-/* =========================
-   Period
-========================= */
+/* =========================================================
+   PERIOD
+   ========================================================= */
 
 .timeline-period {
     display: flex;
@@ -935,17 +342,21 @@
 
     font-size: 14px;
 
+    line-height: 1.4;
+
     margin-bottom: 20px;
 }
 
 .timeline-period svg {
     color: #1976b9;
+
+    flex-shrink: 0;
 }
 
 
-/* =========================
-   Description
-========================= */
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
 
 .timeline-card p {
     color: #587080;
@@ -954,13 +365,13 @@
 
     line-height: 1.75;
 
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 
-/* =========================
-   Technology Tags
-========================= */
+/* =========================================================
+   TECHNOLOGY TAGS
+   ========================================================= */
 
 .timeline-technologies {
     display: flex;
@@ -970,10 +381,11 @@
     gap: 8px;
 }
 
-
-/* Slightly stronger blue */
-
 .timeline-technologies span {
+    display: inline-flex;
+
+    align-items: center;
+
     padding: 6px 12px;
 
     border-radius: 20px;
@@ -986,11 +398,16 @@
 
     font-size: 12px;
 
+    line-height: 1.3;
+
     font-weight: 500;
 
-    transition: all 0.25s ease;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.2s ease;
 }
-
 
 .timeline-technologies span:hover {
     background: #c9e5f5;
@@ -998,4 +415,750 @@
     border-color: #9bcce8;
 
     color: #0d4f7c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       PAGE
+       ----------------------------------------------------- */
+
+    .experience-education-page {
+        width: 100%;
+        min-height: 100vh;
+
+        padding-bottom: 50px;
+
+        overflow-x: hidden;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER
+       ----------------------------------------------------- */
+
+    .experience-header {
+        width: 100%;
+        max-width: none;
+
+        padding: 50px 20px 35px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .section-label {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 10px;
+    }
+
+    .experience-header h1 {
+        font-size: 32px;
+
+        line-height: 1.2;
+
+        margin: 0 0 16px;
+    }
+
+    .experience-intro {
+        font-size: 14px;
+
+        line-height: 1.7;
+
+        margin: 0 auto;
+
+        max-width: 600px;
+    }
+
+
+    /* -----------------------------------------------------
+       TIMELINE
+       ----------------------------------------------------- */
+
+    .timeline {
+        position: relative;
+
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        padding: 15px 15px 30px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE TIMELINE LINE
+       ----------------------------------------------------- */
+
+    .timeline::before {
+        content: '';
+
+        position: absolute;
+
+        left: 25px;
+
+        top: 0;
+        bottom: 0;
+
+        width: 2px;
+
+        background: linear-gradient(to bottom,
+                #d9eaf5,
+                #7db9dc,
+                #d9eaf5);
+
+        transform: translateX(-50%);
+    }
+
+
+    /* -----------------------------------------------------
+       SINGLE COLUMN
+       ----------------------------------------------------- */
+
+    .timeline-item,
+    .timeline-left,
+    .timeline-right {
+
+        position: relative;
+
+        width: 100%;
+
+        left: 0;
+        right: auto;
+
+        box-sizing: border-box;
+
+        padding: 15px 0 15px 52px;
+
+        margin: 0;
+
+        text-align: left;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE DOT
+       ----------------------------------------------------- */
+
+    .timeline-dot,
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+
+        position: absolute;
+
+        left: 5px !important;
+        right: auto !important;
+
+        top: 38px;
+
+        width: 38px;
+        height: 38px;
+
+        box-sizing: border-box;
+
+        border-radius: 50%;
+
+        background: #ffffff;
+
+        border: 2px solid #1976b9;
+
+        color: #1976b9;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14px;
+
+        z-index: 5;
+
+        box-shadow:
+            0 0 0 4px #ffffff,
+            0 3px 10px rgba(25, 118, 185, 0.18);
+
+        pointer-events: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE CARD
+       ----------------------------------------------------- */
+
+    .timeline-card {
+
+        width: 100%;
+        max-width: none;
+
+        box-sizing: border-box;
+
+        padding: 20px;
+
+        margin: 0;
+
+        border-radius: 15px;
+
+        background: linear-gradient(145deg,
+                #f8fcff 0%,
+                #f1f8fd 55%,
+                #eaf5fb 100%);
+
+        border: 1px solid #d4e8f5;
+
+        box-shadow:
+            0 3px 10px rgba(19, 94, 145, 0.06);
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+
+    .timeline-card:hover {
+
+        transform: translateY(-3px);
+
+        border-color: #8fc5e5;
+
+        box-shadow:
+            0 8px 20px rgba(19, 94, 145, 0.10);
+    }
+
+
+    /* -----------------------------------------------------
+       CARD HEADER
+       ----------------------------------------------------- */
+
+    .timeline-card-header {
+
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 14px;
+
+        margin-bottom: 15px;
+
+        min-width: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE LOGO
+       ----------------------------------------------------- */
+
+    .timeline-logo {
+
+        flex: 0 0 58px;
+
+        width: 58px;
+        height: 58px;
+
+        min-width: 58px;
+
+        margin: 0;
+
+        border-radius: 12px;
+
+        background: #ffffff;
+
+        border: 1px solid #dcecf6;
+
+        box-shadow:
+            0 3px 8px rgba(19, 94, 145, 0.07);
+
+        overflow: hidden;
+    }
+
+    .timeline-logo img {
+
+        width: 45px;
+        height: 45px;
+
+        object-fit: contain;
+
+        border-radius: 7px;
+    }
+
+
+    /* -----------------------------------------------------
+       TYPE
+       ----------------------------------------------------- */
+
+    .timeline-type {
+
+        display: inline-block;
+
+        font-size: 10px;
+
+        line-height: 1.3;
+
+        letter-spacing: 1.2px;
+
+        margin-bottom: 5px;
+    }
+
+
+    /* -----------------------------------------------------
+       TITLE
+       ----------------------------------------------------- */
+
+    .timeline-card h2 {
+
+        font-size: 19px;
+
+        line-height: 1.3;
+
+        margin: 5px 0 6px;
+
+        color: #0b2e4f;
+
+        word-break: normal;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       ORGANIZATION
+       ----------------------------------------------------- */
+
+    .timeline-card h3 {
+
+        font-size: 15px;
+
+        line-height: 1.4;
+
+        margin: 0 0 10px;
+
+        color: #315b76;
+
+        word-break: normal;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       PERIOD
+       ----------------------------------------------------- */
+
+    .timeline-period {
+
+        display: flex;
+
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 5px;
+
+        font-size: 12px;
+
+        line-height: 1.4;
+
+        margin-bottom: 14px;
+    }
+
+    .timeline-period svg {
+
+        width: 14px;
+        height: 14px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       DESCRIPTION
+       ----------------------------------------------------- */
+
+    .timeline-card p {
+
+        font-size: 13.5px;
+
+        line-height: 1.7;
+
+        margin: 0 0 15px;
+
+        color: #587080;
+
+        word-break: normal;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       TECHNOLOGY TAGS
+       ----------------------------------------------------- */
+
+    .timeline-technologies {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 6px;
+
+        width: 100%;
+    }
+
+    .timeline-technologies span {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        padding: 5px 9px;
+
+        border-radius: 16px;
+
+        background: #dceef9;
+
+        border: 1px solid #c4e1f2;
+
+        color: #175d8d;
+
+        font-size: 10.5px;
+
+        line-height: 1.3;
+
+        font-weight: 500;
+
+        white-space: nowrap;
+    }
+
+    .timeline-technologies span:hover {
+
+        background: #c9e5f5;
+
+        border-color: #9bcce8;
+
+        color: #0d4f7c;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* -----------------------------------------------------
+       HEADER
+       ----------------------------------------------------- */
+
+    .experience-header {
+
+        padding: 40px 16px 30px;
+    }
+
+    .section-label {
+
+        font-size: 10px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .experience-header h1 {
+
+        font-size: 28px;
+
+        line-height: 1.2;
+
+        margin-bottom: 14px;
+    }
+
+    .experience-intro {
+
+        font-size: 13.5px;
+
+        line-height: 1.65;
+    }
+
+
+    /* -----------------------------------------------------
+       TIMELINE
+       ----------------------------------------------------- */
+
+    .timeline {
+
+        padding: 10px 10px 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       LINE
+       ----------------------------------------------------- */
+
+    .timeline::before {
+
+        left: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       ITEMS
+       ----------------------------------------------------- */
+
+    .timeline-item,
+    .timeline-left,
+    .timeline-right {
+
+        padding-left: 44px;
+
+        padding-top: 12px;
+
+        padding-bottom: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       DOT
+       ----------------------------------------------------- */
+
+    .timeline-dot,
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+
+        left: 1px !important;
+
+        top: 32px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 13px;
+
+        box-shadow:
+            0 0 0 4px #ffffff,
+            0 3px 9px rgba(25, 118, 185, 0.16);
+    }
+
+
+    /* -----------------------------------------------------
+       CARD
+       ----------------------------------------------------- */
+
+    .timeline-card {
+
+        padding: 17px;
+
+        border-radius: 13px;
+    }
+
+
+    /* -----------------------------------------------------
+       CARD HEADER
+       ----------------------------------------------------- */
+
+    .timeline-card-header {
+
+        gap: 11px;
+
+        margin-bottom: 13px;
+    }
+
+
+    /* -----------------------------------------------------
+       LOGO
+       ----------------------------------------------------- */
+
+    .timeline-logo {
+
+        flex: 0 0 52px;
+
+        width: 52px;
+        height: 52px;
+
+        min-width: 52px;
+
+        border-radius: 11px;
+    }
+
+    .timeline-logo img {
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       TEXT
+       ----------------------------------------------------- */
+
+    .timeline-type {
+
+        font-size: 9.5px;
+
+        letter-spacing: 1px;
+    }
+
+    .timeline-card h2 {
+
+        font-size: 17px;
+
+        line-height: 1.3;
+    }
+
+    .timeline-card h3 {
+
+        font-size: 14px;
+
+        line-height: 1.4;
+    }
+
+    .timeline-period {
+
+        font-size: 11.5px;
+
+        margin-bottom: 12px;
+    }
+
+    .timeline-card p {
+
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+
+    /* -----------------------------------------------------
+       TECHNOLOGY TAGS
+       ----------------------------------------------------- */
+
+    .timeline-technologies {
+
+        gap: 5px;
+    }
+
+    .timeline-technologies span {
+
+        padding: 4px 8px;
+
+        font-size: 10px;
+
+        border-radius: 14px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .experience-header {
+
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .experience-header h1 {
+
+        font-size: 25px;
+    }
+
+    .experience-intro {
+
+        font-size: 13px;
+    }
+
+    .timeline {
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .timeline::before {
+
+        left: 18px;
+    }
+
+    .timeline-item,
+    .timeline-left,
+    .timeline-right {
+
+        padding-left: 40px;
+    }
+
+    .timeline-dot,
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+
+        left: 0 !important;
+
+        width: 34px;
+        height: 34px;
+
+        font-size: 12px;
+    }
+
+    .timeline-card {
+
+        padding: 15px;
+
+        border-radius: 12px;
+    }
+
+    .timeline-card-header {
+
+        gap: 9px;
+    }
+
+    .timeline-logo {
+
+        flex: 0 0 48px;
+
+        width: 48px;
+        height: 48px;
+
+        min-width: 48px;
+    }
+
+    .timeline-logo img {
+
+        width: 37px;
+        height: 37px;
+    }
+
+    .timeline-card h2 {
+
+        font-size: 16px;
+    }
+
+    .timeline-card h3 {
+
+        font-size: 13.5px;
+    }
+
+    .timeline-card p {
+
+        font-size: 12.5px;
+    }
+
+    .timeline-technologies span {
+
+        padding: 4px 7px;
+
+        font-size: 9.5px;
+    }
 }

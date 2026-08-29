@@ -393,60 +393,259 @@
 
 
 /* =========================
-   Mobile
-========================= */
+   Mobile Optimization
+   ========================= */
 
 @media (max-width: 768px) {
 
+    .experience-education-page {
+        padding-bottom: 50px;
+        overflow-x: hidden;
+    }
+
+    /* Header */
     .experience-header {
-        padding: 70px 20px 50px;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 55px 20px 40px;
+    }
+
+    .section-label {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        margin-bottom: 12px;
     }
 
     .experience-header h1 {
-        font-size: 40px;
+        font-size: 34px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .experience-intro {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
 
-    /* Move line to left */
-
-    .timeline::before {
-        left: 20px;
-    }
-
-
-    .timeline-item {
+    /* Timeline */
+    .timeline {
         width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 10px 15px 20px 15px;
+    }
 
-        left: 0;
-
-        padding: 30px 0 30px 60px;
-
-        text-align: left;
+    /* Move timeline to left */
+    .timeline::before {
+        left: 24px;
+        width: 2px;
     }
 
 
+    /* Timeline Items */
+    .timeline-item,
     .timeline-left,
     .timeline-right {
+        width: 100%;
         left: 0;
-
+        right: auto;
+        box-sizing: border-box;
+        padding: 20px 0 20px 58px;
+        margin-bottom: 10px;
         text-align: left;
     }
 
 
-    .timeline-dot {
-        left: -2px !important;
-
+    /* Timeline Icon */
+    .timeline-dot,
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+        left: 2px !important;
         right: auto !important;
+        top: 38px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border-width: 2px;
+        box-shadow:
+            0 0 0 4px #ffffff,
+            0 3px 10px rgba(25, 118, 185, 0.18);
+    }
+
+
+    /* Card */
+    .timeline-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    .timeline-card:hover {
+        transform: translateY(-3px);
+    }
+
+
+    /* Card Header */
+    .timeline-card-header {
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+
+
+    /* Logo */
+    .timeline-logo {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        border-radius: 13px;
+        margin-bottom: 0;
+    }
+
+    .timeline-logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    /* Type */
+    .timeline-type {
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* Title */
+    .timeline-card h2 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 7px 0;
+    }
+
+
+    /* Organization */
+    .timeline-card h3 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+
+    /* Period */
+    .timeline-period {
+        font-size: 13px;
+        gap: 6px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+    }
+
+
+    /* Description */
+    .timeline-card p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+    }
+
+
+    /* Technology Tags */
+    .timeline-technologies {
+        gap: 6px;
+    }
+
+    .timeline-technologies span {
+        padding: 6px 10px;
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+
+
+/* =========================
+   Small Phones
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .experience-header {
+        padding: 45px 16px 35px;
+    }
+
+    .experience-header h1 {
+        font-size: 30px;
+    }
+
+    .experience-intro {
+        font-size: 14px;
+    }
+
+
+    .timeline {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .timeline::before {
+        left: 19px;
+    }
+
+
+    .timeline-item,
+    .timeline-left,
+    .timeline-right {
+        padding-left: 48px;
+        padding-right: 0;
+    }
+
+
+    .timeline-dot,
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+        left: -1px !important;
+        top: 34px;
+        width: 38px;
+        height: 38px;
     }
 
 
     .timeline-card {
-        padding: 25px;
+        padding: 18px;
+        border-radius: 14px;
     }
 
+
+    .timeline-logo {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+    }
+
+    .timeline-logo img {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    .timeline-card h2 {
+        font-size: 18px;
+    }
+
+    .timeline-card h3 {
+        font-size: 15px;
+    }
+
+    .timeline-card p {
+        font-size: 13.5px;
+    }
+
+
+    .timeline-technologies span {
+        padding: 5px 9px;
+        font-size: 10.5px;
+    }
 }
-
-
 
 /* =========================
    Timeline
